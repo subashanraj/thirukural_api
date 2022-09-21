@@ -1,0 +1,141 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External css -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!------ Navbar ------>
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a class="navbar-brand" href="#">Thirukural</a>
+            <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 img-fluid">
+                    <img style="width: 100%; height: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/THIRUVALLUVAR_ORIGINAL_PORTRAIT.jpg/1200px-THIRUVALLUVAR_ORIGINAL_PORTRAIT.jpg" alt="">
+                </div>
+                <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <ul style="font-size: 14px;">
+                        <li>Tiruvalluvar, also spelled Thiruvalluvar, also called Valluvar, (flourished c.1st century BC or 6th century AD, India), Tamil poet-saint known as the author of the Tirukkural (“Sacred Couplets”), considered a masterpiece of human thought, compared in India and abroad to the Bible, John Milton’s Paradise Lost, and the works of Plato </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!----- About ----->
+    <section id="about">
+        <div class="container">
+            <h2 id="heading">About</h2>
+            <div class="row">
+                <p>
+                    Tirukkural, (Tamil: “Sacred Couplets”) also spelled Tirukural or Thirukkural, also called Kural, the most celebrated of the Patiren-kirkkanakku (“Eighteen Ethical Works”) in Tamil literature and a work that has had an immense influence on Tamil culture and life.
+                    It is usually attributed to the poet Tiruvalluvar, who is thought to have lived in India in the 6th century, though some scholars assign an earlier date (1st century BC).
+                </p>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!------ Search ------->
+    <section id="search">
+        <div class="container-10">
+            <div class="container-8">
+                <h2 id="heading">Search</h2>
+                <div class="row">
+                    <div style="padding-left: 100px;" class="col-12">
+                        <input type="number" id="userinput" placeholder="Enter number between 1 to 1330">
+                        <button onclick="foo()">Search</button>
+                    </div>
+                </div>
+                <div style="margin: 20px; " class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <table class="table table-bordered">
+                            <thead>
+                            <th>Tamil</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p id="chap_tam"></p>
+                                        <p style="margin-bottom: 0px;" id="part1_tam"></p>
+                                        <p id="part2_tam"></p>
+                                        <p id="tam_exp"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <table class="table table-bordered">
+                            <thead>
+                            <th>English</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p id="chap_eng"></p>
+                                        <p id="eng"></p>
+                                        <p id="eng_exp"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>  
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
